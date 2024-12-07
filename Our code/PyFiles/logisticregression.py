@@ -104,7 +104,7 @@ def LogPredict(df1):
   # Data def needs resampling (random undersampling, SMOTE oversampling)
   # Option of using Cost-sensitive Logistic Regression.
 
-  columns_to_exclude = ['MORTALITY_EVENT', 'MI_EVENT', 'STROKE_EVENT', 'Unnamed: 0', 'PROCEDUREID']
+  columns_to_exclude = ['MORTALITY_EVENT', 'MI_EVENT', 'STROKE_EVENT', 'PROCEDUREID']
   X = df.drop(columns = columns_to_exclude)
   mortality_y = df['MORTALITY_EVENT']
   mi_y = df['MI_EVENT']
